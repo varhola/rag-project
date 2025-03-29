@@ -1,0 +1,702 @@
+[
+  {
+    "question": "What type of drink does LiHua suggest to have with hot pot?",
+    "expected_answer": "Cold beer",
+    "expected_evidence": "Time: 20260930_16:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua suggests having cold beer with hot pot. Evidence: 20260430_17:00."
+  },
+  {
+    "question": "What toppings did Hailey put on the bread for Li Hua's next delivery, and what is the name of the bakery she gets her bread from?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Hailey recommended a drizzle of olive oil and a sprinkle of sea salt, and Li Hua also wanted to add cherry tomatoes. Evidence: 20260327_08:00. \n\nAnswer: Hailey's bakery. Evidence: 20260408_08:38."
+  },
+  {
+    "question": "When does the special event at Hailey's bakery start according to Hailey and LiHua's conversation on 20260622?",
+    "expected_answer": "The event starts at 10 AM this Saturday",
+    "expected_evidence": "20260622_13:30",
+    "question_type": "Single",
+    "model_answer": "Answer: The special event at Hailey's bakery starts at 10 AM. Evidence: Time: 20260622_13:30."
+  },
+  {
+    "question": "What is the reason Thrall cannot participate in the garage sale?",
+    "expected_answer": "Thrall has a lot happening with the garden renovations",
+    "expected_evidence": "20260814_15:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Thrall cannot participate in the garage sale because he is busy with the garden renovations. Evidence: Time: 20260312_12:30."
+  },
+  {
+    "question": "What is the name of Hailey Johnson's new weekly flavor cheese?",
+    "expected_answer": "Hazelnut Basque Roasted Cheese",
+    "expected_evidence": "20260603_09:45",
+    "question_type": "Single",
+    "model_answer": "Answer: Hazelnut Basque Roasted Cheese. Evidence: 20260603_09:45."
+  },
+  {
+    "question": "What is the article that Chae shares with LiHua about?",
+    "expected_answer": "how to fall asleep faster at night",
+    "expected_evidence": "20260711_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The article Chae shares with LiHua is about how to fall asleep faster at night. Evidence: Time: 20260711_08:00."
+  },
+  {
+    "question": "What is the phone number for the maintenance worker that Adam Smith provided to Li Hua for the broken streetlight?",
+    "expected_answer": "314159",
+    "expected_evidence": "20260605_18:45",
+    "question_type": "Single",
+    "model_answer": "Answer: The phone number is 314159. Evidence: Time: 20260605_18:45."
+  },
+  {
+    "question": "Why did Li Hua ask for extra exercises to do at home?",
+    "expected_answer": "to complement his training schedule",
+    "expected_evidence": "20260205_13:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua wanted to maximize their progress. Evidence: 20260205_13:00."
+  },
+  {
+    "question": "When is the web design seminar at Wolfgang's company happening?",
+    "expected_answer": "Thursday at 3 PM",
+    "expected_evidence": "20260511_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The web design seminar is happening on Thursday at 3 PM. Evidence: Time: 20260511_11:00."
+  },
+  {
+    "question": "How does Phaedra view Jaime's character arc?",
+    "expected_answer": "Fascinating as he goes from \"Kingslayer\" to someone who values honor",
+    "expected_evidence": "20260915_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Phaedra views Jaime's character arc as a transformation from a \"Kingslayer\" to someone who values honor. Evidence: Time: 20261026_20:00."
+  },
+  {
+    "question": "Did Hailey announce the new line of high-protein breads before inviting Li Hua to the special bakery event?",
+    "expected_answer": "Yes",
+    "expected_evidence": "20260611_12:45<and>20260622_13:30",
+    "question_type": "Multi",
+    "model_answer": "Answer: Insufficient information. Evidence: N/A."
+  },
+  {
+    "question": "What does Tamara say Cersei's love led to?",
+    "expected_answer": "Her downfall",
+    "expected_evidence": "20261010_10:10",
+    "question_type": "Single",
+    "model_answer": "Answer: Tamara says Cersei's love led to her downfall. Evidence: Time: 20261016_10:40."
+  },
+  {
+    "question": "What does MuradinBronzebeard think about the cushions idea?",
+    "expected_answer": "It sounds like a nice idea",
+    "expected_evidence": "20261013_13:30",
+    "question_type": "Single",
+    "model_answer": "Answer: MuradinBronzebeard thinks colorful cushions would make the garden feel more alive. Evidence: 20260427_10:30."
+  },
+  {
+    "question": "Where does Li Hua plan to meet Yuriko Yamamoto to show the final website?",
+    "expected_answer": "Central Perk café",
+    "expected_evidence": "20260317_15:30",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua plans to meet Yuriko Yamamoto at Central Perk café. Evidence: 20260317_15:30."
+  },
+  {
+    "question": "Who does Li Hua go to watch the movie \"Overwatch 3\" with?",
+    "expected_answer": "Wolfgang",
+    "expected_evidence": "20260122_17:00<and>20260121_13:00",
+    "question_type": "Multi",
+    "model_answer": "Answer: Li Hua goes to watch the movie \"Overwatch 3\" with WolfgangSchulz. \nEvidence: Time: 20260121_13:00."
+  },
+  {
+    "question": "What songs does ChaeSong-hwa suggest adding to the mix according to the discussion on 2026101?",
+    "expected_answer": "Shallow or \"Shake It Off\"",
+    "expected_evidence": "20261019_19:00",
+    "question_type": "Single",
+    "model_answer": "Answer: ChaeSong-hwa suggests adding \"Uptown Funk\" or \"Happy\" to the mix. Evidence: Time: 20260329_10:00."
+  },
+  {
+    "question": "Why can't people sit on the benches when Turalyon informs the community that the benches have been installed on 20260604?",
+    "expected_answer": "the paint isn't dry yet",
+    "expected_evidence": "20260604_18:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The paint on the benches is not dry yet. Evidence: Time: 20260604_18:00."
+  },
+  {
+    "question": "What team does JakeWatson admire for their comebacks?",
+    "expected_answer": "Real Madrid",
+    "expected_evidence": "20261014_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: JakeWatson admires Real Madrid for their comebacks. Evidence: Time: 20261014_20:00."
+  },
+  {
+    "question": "What does Quillan suggest could have been a game-changer for Cersei?",
+    "expected_answer": "Accepting Tyrion's advice",
+    "expected_evidence": "20261010_10:10",
+    "question_type": "Single",
+    "model_answer": "Answer: Quillan suggests that if Cersei had accepted Tyrion's advice, it could have been a game-changer for her. Evidence: 20261016_16:00."
+  },
+  {
+    "question": "What is LiHua's favorite match involving Barcelona?",
+    "expected_answer": "The 2013 Champions League match against AC Milan",
+    "expected_evidence": "20260917_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua's favorite match involving Barcelona is the 2013 Champions League match against AC Milan. Evidence: Time: 20261026_16:00."
+  },
+  {
+    "question": "What does Dacey propose to practice on Saturday?",
+    "expected_answer": "soccer shooting skills",
+    "expected_evidence": "20261014_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Dacey proposes to practice penalty kicks and dribbling skills. Evidence: Time: 20261014_20:00."
+  },
+  {
+    "question": "What does Adam Smith suggest Li Hua use to hang artwork without damaging the walls?",
+    "expected_answer": "use removable hooks",
+    "expected_evidence": "20260201_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Adam Smith suggests Li Hua use removable hooks. Evidence: 20260121_11:00."
+  },
+  {
+    "question": "Why does AdamSmith ask LiHua about the basement on 20260907?",
+    "expected_answer": "check in and see how the basement held up after the storm",
+    "expected_evidence": "20260907_14:00",
+    "question_type": "Single",
+    "model_answer": "Answer: AdamSmith asks LiHua about the basement to see if she needs any help with it. Evidence: Time: 20260907_17:00."
+  },
+  {
+    "question": "How does RexxarRemar plan to spend time in the garden once it's done?",
+    "expected_answer": "For family gatherings and relaxing afternoons",
+    "expected_evidence": "20260518_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: RexxarRemar plans to spend time in the garden with his family and relax in the afternoons. Evidence: Time: 20260518_10:00."
+  },
+  {
+    "question": "What does AdamSmith agree is crucial to align with the garden project schedule?",
+    "expected_answer": "Support for local businesses",
+    "expected_evidence": "20260921_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: AdamSmith agrees that supporting local businesses is crucial to align with the garden project schedule. \nEvidence: Time: 20260921_10:00."
+  },
+  {
+    "question": "Which goal does JakeWatson never forget from Messi?",
+    "expected_answer": "Messi's solo goal against Getafe in 2007",
+    "expected_evidence": "20260917_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: JakeWatson never forgets Messi's solo goal against Getafe in 2007. Evidence: Time: 20261026_16:00."
+  },
+  {
+    "question": "When does Li Hua plan to celebrate Chinese Lunar New Year?",
+    "expected_answer": "20260118",
+    "expected_evidence": "20260113_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua plans to celebrate Chinese Lunar New Year on January 18th. Evidence: 20260113_11:00."
+  },
+  {
+    "question": "What are LiHua's usual recovery snacks after a game?",
+    "expected_answer": "a protein shake and a fruit smoothie",
+    "expected_evidence": "20261023_23:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua usually has a protein shake and a fruit smoothie after a game. Evidence: 20261023_23:00."
+  },
+  {
+    "question": "How long should each stretch be held according to JakeWatson?",
+    "expected_answer": "About 30 seconds",
+    "expected_evidence": "20260925_21:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Each stretch should be held for about 30 seconds. Evidence: Time: 20260925_21:00."
+  },
+  {
+    "question": "What was the content of the first-ever delivery from Hailey to LiHua and what was LiHua's opinion about it?",
+    "expected_answer": "a fresh sourdough loaf and a bottle of milk and LiHua praises Hailey's bread and milk",
+    "expected_evidence": "20260317_08:00<and>20260318_15:00",
+    "question_type": "Multi",
+    "model_answer": "Answer: Hailey delivered a fresh sourdough loaf and a bottle of milk to LiHua. LiHua was excited to try the sourdough and said that Hailey's bread is the talk of the neighborhood. Evidence: Time: 20260317_08:00."
+  },
+  {
+    "question": "When is the installation of the air-conditioner for the basement?",
+    "expected_answer": "It's set for Wednesday next week",
+    "expected_evidence": "20260809_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The air-conditioner installation is scheduled for Wednesday next week. Evidence: Time: 20260809_12:00."
+  },
+  {
+    "question": "What is ThaneChambers' memorable \"Warzone\" experience?",
+    "expected_answer": "Coming back from a tough spot to win at the last second",
+    "expected_evidence": "20260920_16:00",
+    "question_type": "Single",
+    "model_answer": "Answer: ThaneChambers had a memorable \"Warzone\" experience where he and his team came back from a tough spot and won at the last second. Evidence: Time: 20260920_20:00."
+  },
+  {
+    "question": "Which game does Helios suggest for tactical fun with a great story and character development?",
+    "expected_answer": "Fire Emblem",
+    "expected_evidence": "20260922_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Helios suggests Fire Emblem. Evidence: 20260329_10:00."
+  },
+  {
+    "question": "What does Li Hua ask Adam about the door hinge?",
+    "expected_answer": "a small repair",
+    "expected_evidence": "20260107_15:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua asks Adam if it's possible to get a small repair done on the door hinge. Evidence: 20260107_15:00."
+  },
+  {
+    "question": "Why is protein important according to JenniferMoore?",
+    "expected_answer": "For keeping the body in shape",
+    "expected_evidence": "20260919_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Protein is important for muscle recovery and building lean mass. Evidence: 20260325_19:00."
+  },
+  {
+    "question": "What type of ambiance does YurikoYamamoto want for her studio's homepage?",
+    "expected_answer": "more welcoming and engaging",
+    "expected_evidence": "20260223_15:00",
+    "question_type": "Single",
+    "model_answer": "Answer: YurikoYamamoto wants a soft and calming ambiance for her studio's homepage. Evidence: Time: 20260726_14:30."
+  },
+  {
+    "question": "What toppings does Wolfgang Schulz prefer on his burger?",
+    "expected_answer": "Cheese and bacon",
+    "expected_evidence": "20260828_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Wolfgang Schulz prefers lettuce, tomato, and pickles on his burger. Evidence: 20260122_17:00."
+  },
+  {
+    "question": "What did Li Hua enjoy the most about the restaurant that he and Wolfgang visited for dinner on 20260514?",
+    "expected_answer": "The pasta dish and the dessert",
+    "expected_evidence": "20260514_22:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua enjoyed the pasta dish the most. Evidence: 20260514_22:00."
+  },
+  {
+    "question": "What does Bronwyn think about the idea of stealth missions?",
+    "expected_answer": "it will be all about timing and communication",
+    "expected_evidence": "20261014_14:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Bronwyn thinks stealth missions would be a fun challenge. Evidence: Time: 20260629_18:30."
+  },
+  {
+    "question": "What were the specific details of the negotiation between Jake Watson and Li Hua regarding player transfers from FC Barcelona to FC Bayern Munich?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Insufficient information. Evidence: N/A"
+  },
+  {
+    "question": "Has EmilyBurnett ever met anyone like Shedlon Cooper in her real life?",
+    "expected_answer": "No",
+    "expected_evidence": "20260910_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Insufficient information. Evidence: N/A."
+  },
+  {
+    "question": "What type of traditional games did Wolfgang Schulz play with Li Hua during the Lunar New Year celebration?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Insufficient information. Evidence: N/A."
+  },
+  {
+    "question": "How does strength training help prevent soccer injuries?",
+    "expected_answer": "It builds muscles around joints & reduces injury risk & improves stability and endurance",
+    "expected_evidence": "20260914_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Strength training helps prevent soccer injuries by building muscles around joints. Evidence: 20260914_10:00."
+  },
+  {
+    "question": "Why is LiHua praising Chae in their conversation on 20260717?",
+    "expected_answer": "LiHua was really amazed by Chae's performance in the band last Sunday because Chae's singing has really leveled up",
+    "expected_evidence": "20260717_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua is praising Chae for their performance in the band. Evidence: Time: 20260717_12:00."
+  },
+  {
+    "question": "What is Adam Smith's condition for Li Hua to add decorations to the basement?",
+    "expected_answer": "must be reversible and not damage anything",
+    "expected_evidence": "20260219_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Adam Smith's condition for Li Hua to add decorations to the basement is that they must be reversible and not damage anything. Evidence: Time: 20260219_20:00."
+  },
+  {
+    "question": "What is the name of the concert that Wolfgang and Li Hua will attend on March 7th?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Insufficient information. Evidence: N/A"
+  },
+  {
+    "question": "What was special about the match against Manchester City in 2022 according to the group discussion?",
+    "expected_answer": "Rodrygo's stoppage-time goal",
+    "expected_evidence": "20261014_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Real Madrid pulled off a comeback in stoppage time to win the match. Evidence: Time: 20261014_20:00."
+  },
+  {
+    "question": "Why is Chae Song-hwa unable to join the rehearsal?",
+    "expected_answer": "She has to attend a medical lecture",
+    "expected_evidence": "20260515_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Chae Song-hwa is unable to join the rehearsal because she has to attend a medical lecture. Evidence: Time: 20260416_19:00."
+  },
+  {
+    "question": "What is the main topic of the conversation on 2026-04-28 at 5 PM?",
+    "expected_answer": "Breathing techniques and tips for squats during workouts",
+    "expected_evidence": "20260428_17:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The main topic of the conversation is adjusting the grip during pull-ups to prevent shaking. Evidence: Time: 20260428_15:00."
+  },
+  {
+    "question": "What does Thrall suggest they create to support local businesses?",
+    "expected_answer": "A list of businesses they love to support",
+    "expected_evidence": "20260921_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Thrall suggests they create a flyer with a list of local businesses. Evidence: Time: 20260921_10:00."
+  },
+  {
+    "question": "What feature are they hoping for in the new game?",
+    "expected_answer": "co-op missions and shared loot system",
+    "expected_evidence": "20261014_14:00",
+    "question_type": "Single",
+    "model_answer": "Answer: They are hoping for crossplay. Evidence: Time: 20260319_16:00."
+  },
+  {
+    "question": "What specific dietary changes did Li Hua implement in his training regimen as a result of Jennifer's advice on endurance and flexibility?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Insufficient information. Evidence: N/A."
+  },
+  {
+    "question": "What is Li Hua's feedback on Chae Song-hwa's medical knowledge lecture?",
+    "expected_answer": "It is insightful and makes complex topics easy to understand",
+    "expected_evidence": "20260411_21:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua found the lecture insightful and learned a lot about the latest advancements in neurosurgery. Evidence: 20260411_21:00."
+  },
+  {
+    "question": "Who offers to check with friends for live music performance?",
+    "expected_answer": "ArthasMenethil",
+    "expected_evidence": "20261013_13:30",
+    "question_type": "Single",
+    "model_answer": "Answer: ArthasMenethil offers to check with friends for live music performance. Evidence: Time: 20261013_13:30."
+  },
+  {
+    "question": "What does LiHua want to know about WolfgangSchulz's pizza preference?",
+    "expected_answer": "his favorite place for pizza",
+    "expected_evidence": "20261015_15:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua wants to know what WolfgangSchulz wants to order. Evidence: 20260430_17:00."
+  },
+  {
+    "question": "What does Aisling find emotionally impactful about Red Dead Redemption 2's ending?",
+    "expected_answer": "Arthur's realization of his fate and the music during the last ride",
+    "expected_evidence": "20260909_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Aisling finds the ending emotionally impactful because of the music playing during Arthur's last ride. Evidence: Time: 20260809_10:00."
+  },
+  {
+    "question": "What does HaileyJohnson want LiHua to taste?",
+    "expected_answer": "a new bread recipe",
+    "expected_evidence": "20261016_16:00",
+    "question_type": "Single",
+    "model_answer": "Answer: HaileyJohnson wants LiHua to taste the new artisanal sourdough bread. Evidence: Time: 20260317_08:00."
+  },
+  {
+    "question": "Who does Li Hua mention as their favorite character from The Witcher 3?",
+    "expected_answer": "Geralt",
+    "expected_evidence": "20260818_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua mentions Geralt as their favorite character from The Witcher 3. \nEvidence: Time: 20260818_18:00."
+  },
+  {
+    "question": "Would LiHua be interested in playing co-op with the group?",
+    "expected_answer": "Yes",
+    "expected_evidence": "20261020_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Yes. Evidence: 20260819_19:00."
+  },
+  {
+    "question": "What is Li Hua's preference for a burger patty's doneness?",
+    "expected_answer": "Medium rare",
+    "expected_evidence": "20260828_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua prefers a medium rare burger patty. Evidence: 20260401_15:00."
+  },
+  {
+    "question": "Can Li Hua hang his artworks on the wall?",
+    "expected_answer": "Yes",
+    "expected_evidence": "20260201_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Yes. Evidence: 20260121_11:00."
+  },
+  {
+    "question": "What suggestions does Li Hua propose to Adam Smith about the upcoming community garden renovation?",
+    "expected_answer": "Add more seating areas for people to relax and enjoy the space and some flower beds with native plants",
+    "expected_evidence": "20260417_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Li Hua suggests adding more seating areas, flower beds with native plants, and a small herb section. Evidence: 20260417_11:00."
+  },
+  {
+    "question": "What was ThaneChambers' favorite horse-related side quest in Red Dead Redemption 2?",
+    "expected_answer": "the “troubled” horse",
+    "expected_evidence": "20260909_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: ThaneChambers' favorite horse-related side quest was the one with the \"troubled\" horse. Evidence: Time: 20260319_19:00."
+  },
+  {
+    "question": "Which game does LiHua mention he's been playing on 20260920?",
+    "expected_answer": "Call of Duty: Warzone",
+    "expected_evidence": "20260920_16:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua mentions he's been playing \"Black Myth: Wukong\". Evidence: Time: 20260920_20:00."
+  },
+  {
+    "question": "What is the amount of rent Li Hua owes to Adam Smith for the months of April and May?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Insufficient information. Evidence: N/A"
+  },
+  {
+    "question": "Which scene in The Witcher 3 does ThaneChambers consider as one of his favorites involving Yennefer?",
+    "expected_answer": "The scene when Geralt is looking for Yennefer in the early part of the game",
+    "expected_evidence": "20260818_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: ThaneChambers' favorite scene involving Yennefer is when Geralt is looking for her in the early part of the game. Evidence: Time: 20260818_18:00."
+  },
+  {
+    "question": "Who is considering buying Sekiro: Shadows Die Twice and asks for ThaneChambers' opinion?",
+    "expected_answer": "LiHua",
+    "expected_evidence": "20261001_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua is considering buying Sekiro: Shadows Die Twice. Evidence: 20261001_21:00."
+  },
+  {
+    "question": "What brands of air-conditioners does LiHua recommend to Wolfgang?",
+    "expected_answer": "Mitsubishi and Daikin",
+    "expected_evidence": "20260729_14:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua recommends Mitsubishi and Daikin. Evidence: 20260729_14:00."
+  },
+  {
+    "question": "What is LiHua's favorite player moment from Messi?",
+    "expected_answer": "When Messi scored a header against Manchester United in 2011",
+    "expected_evidence": "20260917_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua's favorite player moment from Messi is when he scored a header in the Champions League against Manchester United in 2011. Evidence: 20260917_10:00"
+  },
+  {
+    "question": "Who discusses classic matches between Barca and Bayern with Jake?",
+    "expected_answer": "LiHua",
+    "expected_evidence": "20261005_10:05",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua discusses classic matches between Barca and Bayern with Jake. \nEvidence: Time: 20261026_16:00."
+  },
+  {
+    "question": "What house rule does Adam mention?",
+    "expected_answer": "keep noise to a minimum during late hours",
+    "expected_evidence": "20260106_09:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Adam mentions to keep noise to a minimum during late hours. Evidence: 20260106_09:00."
+  },
+  {
+    "question": "Who proposes the idea of adding tables near the benches?",
+    "expected_answer": "RexxarRemar",
+    "expected_evidence": "20261013_13:30",
+    "question_type": "Single",
+    "model_answer": "Answer: MalfurionStormrage proposes the idea of adding picnic tables near the benches. Evidence: 20260427_10:30."
+  },
+  {
+    "question": "How does LiHua feel about the bench press challenge proposed by JenniferMoore?",
+    "expected_answer": "LiHua feels pretty strong and is up for the challenge",
+    "expected_evidence": "20260924_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua is up for the challenge. Evidence: Time: 20260924_20:00."
+  },
+  {
+    "question": "How does TirionFordring emphasize the importance of balancing the garden renovation with supporting local vendors?",
+    "expected_answer": "By stating that both aspects are important for the best outcome",
+    "expected_evidence": "20260921_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: TirionFordring emphasizes the importance of balancing the garden renovation with supporting local vendors by saying that they should ensure the renovation is successful while also supporting local vendors. \nEvidence: Time: 20260426_13:30."
+  },
+  {
+    "question": "Who is the most hateable character in Game of Thrones in Merrick's opinion?",
+    "expected_answer": "Cersei Lannister",
+    "expected_evidence": "20260902_16:00",
+    "question_type": "Single",
+    "model_answer": ""
+  },
+  {
+    "question": "What is the main topic of the conversation between LiHua and ChaeSong-hwa on 20260626?",
+    "expected_answer": "Chae and her team making a breakthrough in the research study and LiHua congratulating her",
+    "expected_evidence": "20260626_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The main topic of the conversation is the community garden renovation. Evidence: Time: 20260626_16:00."
+  },
+  {
+    "question": "What relationship could have potentially changed Cersei's path according to Phaedra?",
+    "expected_answer": "Her relationship with Tyrion",
+    "expected_evidence": "20261010_10:10",
+    "question_type": "Single",
+    "model_answer": "Answer: Phaedra believes that Cersei's relationship with Tyrion could have potentially changed her path. Evidence: Time: 20261010_10:00."
+  },
+  {
+    "question": "What game has Gavriel been hooked on recently for its blend of RPG elements and social simulation?",
+    "expected_answer": "Persona 5 Royal",
+    "expected_evidence": "20260922_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Persona 5 Royal. Evidence: 20260112_10:00."
+  },
+  {
+    "question": "What is the main theme of game group's discussion on 20260901_13:00?",
+    "expected_answer": "Dutch van der Linde's character and leadership",
+    "expected_evidence": "20260901_13:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The main theme of the discussion is the best open-world games. Evidence: Time: 20260901_13:00."
+  },
+  {
+    "question": "What are the dimensions of the window that LiHua measures?",
+    "expected_answer": "150 cm wide and 120 cm high",
+    "expected_evidence": "20260928_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The window is 150 cm wide and 120 cm high. Evidence: Time: 20260928_10:00."
+  },
+  {
+    "question": "What new species of flowers will be featured in the community garden renovation, according to the feedback provided by Li Hua during the progress reports?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Li Hua suggested lavender and coneflowers. Evidence: Time: 20260417_11:00."
+  },
+  {
+    "question": "Did Li Hua ask Wolfgang for advice on renovating the basement before he invited Adam Smith to check the progress of the basement renovation?",
+    "expected_answer": "Yes",
+    "expected_evidence": "20260219_20:10<and>20260223_17:00<and>20260707_16:00",
+    "question_type": "Multi",
+    "model_answer": "Answer: Yes. Evidence: 20260219_20:10."
+  },
+  {
+    "question": "What game does Elara mention for making her emotional?",
+    "expected_answer": "Bioshock Infinite",
+    "expected_evidence": "20261011_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Elara mentions \"Bioshock Infinite\". Evidence: Time: 20261111_11:00."
+  },
+  {
+    "question": "What type of equipment does Wolfgang Schulz use when he works out at the gym?",
+    "expected_answer": "Insufficient information",
+    "expected_evidence": "N/A",
+    "question_type": "Null",
+    "model_answer": "Answer: Wolfgang Schulz uses a variety of equipment at the gym, including weights and machines. Evidence: 20260111_08:00."
+  },
+  {
+    "question": "What does LiHua say Cersei's power came at the price of?",
+    "expected_answer": "Meaningful connections",
+    "expected_evidence": "20261010_10:10",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua says Cersei's power came at the price of meaningful connections. \nEvidence: Time: 20261026_16:00."
+  },
+  {
+    "question": "What game does Gavriel mention for its characters and plot twists?",
+    "expected_answer": "Final Fantasy VII Remake",
+    "expected_evidence": "20261011_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Gavriel mentions \"Final Fantasy VII Remake\" for its characters and plot twists. Evidence: Time: 20261110_11:00."
+  },
+  {
+    "question": "When did Li Hua ask Jennifer Moore for tips on dealing with muscle soreness?",
+    "expected_answer": "20260206_16:00",
+    "expected_evidence": "20260206_16:00",
+    "question_type": "Single",
+    "model_answer": "Answer: 20260206_16:00. Evidence:  Time: 20260206_16:00."
+  },
+  {
+    "question": "How long does it take in total from LiHua planning on getting the air-conditioner to the air-conditioner been installed?",
+    "expected_answer": "about 27 days",
+    "expected_evidence": "20260716_10:00<and>20260812_11:00",
+    "question_type": "Multi",
+    "model_answer": "Answer: It takes 9 days. Evidence: 20260402_08:30 and 20260412_08:11."
+  },
+  {
+    "question": "What did Wolfgang Schulz suggest Li Hua to do when Li Hua face a difficult client?",
+    "expected_answer": "keep a clear log of all the changes requested by the client",
+    "expected_evidence": "20260131_14:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Wolfgang Schulz suggested Li Hua to keep the communication open with the client and set clear expectations about changes. Evidence: 20260131_14:00."
+  },
+  {
+    "question": "Who does LiHua ask for help with installing a curtain?",
+    "expected_answer": "AdamSmith",
+    "expected_evidence": "20260921_16:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua asks Adam for help. Evidence: Time: 20260421_16:45."
+  },
+  {
+    "question": "What are Jake's go-to snacks for match days?",
+    "expected_answer": "Chips and dip & pizza",
+    "expected_evidence": "20261005_10:05",
+    "question_type": "Single",
+    "model_answer": "Answer: Jake's go-to snacks for match days are chips and dip and pizza. Evidence: Time: 20261010_10:00."
+  },
+  {
+    "question": "What does LiHua express feeling after the encouragement from Jennifer?",
+    "expected_answer": "Strong and motivated",
+    "expected_evidence": "20260930_14:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua expresses feeling great about the journey ahead. Evidence: 20260303_15:00."
+  },
+  {
+    "question": "What does Briar think about Real Madrid's chances for the rest of the season?",
+    "expected_answer": "They have a solid chance to challenge for every title",
+    "expected_evidence": "20261014_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Briar thinks Real Madrid has a solid chance to challenge for every title. Evidence: 20260424_21:00."
+  },
+  {
+    "question": "What game does ThaneChambers remember as LiHua's favorite?",
+    "expected_answer": "Black Myth: Wukong",
+    "expected_evidence": "20261020_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Black Myth: Wukong. Evidence: Time: 20261124_14:00."
+  },
+  {
+    "question": "What are LiHua's favorite snacks for the game?",
+    "expected_answer": "Nachos with cheese and spicy salsa",
+    "expected_evidence": "20261005_10:05",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua's favorite snacks for the game are nachos with cheese and spicy salsa. Evidence: Time: 20261006_10:00."
+  },
+  {
+    "question": "What does LiHua think about the graphics and gameplay of Black Myth: Wukong?",
+    "expected_answer": "The graphics look insane and the gameplay seems really fluid",
+    "expected_evidence": "20261001_20:00",
+    "question_type": "Single",
+    "model_answer": "Answer: LiHua thinks the graphics look insane and the gameplay seems really fluid. Evidence: 20261124_14:00."
+  },
+  {
+    "question": "What type of stretches does Sage prefer before hitting the gym?",
+    "expected_answer": "Sage prefers dynamic stretches",
+    "expected_evidence": "20260816_17:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Sage prefers clamshells and monster walks to activate their glutes. Evidence: 20260325_19:00."
+  },
+  {
+    "question": "What does Rowan love about Tyrion's \"I drink and I know things\" line?",
+    "expected_answer": "It captures his cleverness",
+    "expected_evidence": "20260915_12:00",
+    "question_type": "Single",
+    "model_answer": "Answer: Rowan loves how the line perfectly captures Tyrion's cleverness. Evidence: 20260416_16:00."
+  },
+  {
+    "question": "What match does JakeWatson cherish from the Champions League final against Manchester United?",
+    "expected_answer": "The 2009 final",
+    "expected_evidence": "20260917_10:00",
+    "question_type": "Single",
+    "model_answer": "Answer: JakeWatson cherishes the Champions League final against Manchester United in 2009. Evidence: 20261006_10:00"
+  },
+  {
+    "question": "What is the purpose of the community picnic?",
+    "expected_answer": "to bring the community together and get to know each other better",
+    "expected_evidence": "20261024_11:00",
+    "question_type": "Single",
+    "model_answer": "Answer: The purpose of the community picnic is to bring the community together and get to know each other better. Evidence: Time: 20261024_10:00."
+  }
+]
