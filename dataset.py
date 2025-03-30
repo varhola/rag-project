@@ -1,23 +1,40 @@
-import ollama
+import os
+from helpers import data_to_vec
+
+DATASET = {}
+
+def get_directories(dir):
+    dir_list = os.listdir(dir)
+    dirs = [f for f in dir_list if not os.path.isfile(dir + "/" + f)]
+    return dirs
+
+def get_filenames(dir):
+    dir_list = os.listdir(dir)
+    files = [f for f in dir_list if os.path.isfile(dir + "/" + f)]
+    return files
 
 def read_data(filenames):
     print(" Reading data from files...")
-    dataset = []
+    data_size = 0
     for filename in filenames:
         with open(filename, 'r', encoding="utf8") as file:
-            dataset.extend(file.readlines())
-    print(f' Ready reading files ({len(dataset)} entries)')
-    return dataset
+            lines = file.readlines()
+            DATASET[lines[0]] = []
+            for line in lines[1:]:
+                DATASET[lines[0]].append({
+                    "original": line,
+                    "vector": data_to_vec(line)   
+                })
+            data_size += len(lines[1:])
+    print(f' Ready reading files ({data_size} entries)')  
 
-def data_to_vec(data, model='hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'):
-    return ollama.embed(model=model, input=data)['embeddings'][0]    
-
-def create_dataset(filenames):
+def create_dataset(dir="./data/LiHua-World"):
     print("Creating new dataset...")
-    dataset = read_data(filenames)
-
-    vector_dataset = []
-    for chunk in dataset:
-        vector_dataset.append(data_to_vec(chunk))
-
-    return vector_dataset
+    dir_names = get_directories(dir)
+    filenames = []
+    for d in dir_names:
+        files = get_filenames(dir + "/" + d)
+        for f in files:
+            filenames.append(dir + "/" + d + "/" + f)
+    print(len(filenames), "files to read")
+    read_data(filenames)

@@ -1,12 +1,16 @@
-from model import ask
-from dataset import create_dataset
+from dataset import create_dataset, DATASET
+from retrieval import retrieve
 
-input_files = ['cat-facts.txt']
-dataset = create_dataset(input_files)
+create_dataset()
 
-input_query = input('Ask me a question: ')
+input_query = "Li Hua has a difficult client. When did he solve that client's project?"
 
-answer_stream = ask(dataset, input_query)
+similar = retrieve(input_query)
+print(input_query)
+for s in similar:
+    print(s)
 
-for chunk in answer_stream:
-    print(chunk['message']['content'], end='', flush=True)
+#answer_stream = ask(dataset, input_query)
+
+#for chunk in answer_stream:
+#    print(chunk['message']['content'], end='', flush=True)
