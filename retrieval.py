@@ -1,7 +1,7 @@
 from helpers import data_to_vec, cosine_similarity
 from dataset import DATASET
 
-def retrieve(query, top_n=5, similarity_function=cosine_similarity):
+def retrieve(query, top_n=3, similarity_function=cosine_similarity):
     query_embedding = data_to_vec(query)
     dataset = []
     for key, data in DATASET.items():

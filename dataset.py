@@ -2,6 +2,7 @@ import os
 from helpers import data_to_vec
 
 DATASET = {}
+FILE_DATA = {}
 
 def get_directories(dir):
     dir_list = os.listdir(dir)
@@ -19,9 +20,10 @@ def read_data(filenames):
     for filename in filenames:
         with open(filename, 'r', encoding="utf8") as file:
             lines = file.readlines()
-            DATASET[lines[0]] = []
+            FILE_DATA[lines[0][6:-1]] = "".join(lines)
+            DATASET[lines[0][6:-1]] = []
             for line in lines[1:]:
-                DATASET[lines[0]].append({
+                DATASET[lines[0][6:-1]].append({
                     "original": line,
                     "vector": data_to_vec(line)   
                 })

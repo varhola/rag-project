@@ -1,36 +1,29 @@
-import ollama
+from retrieval import retrieve
+from helpers import ask_model
+from dataset import FILE_DATA
 
-def cosine_similarity(a, b):
-    dot_product = sum([x * y for x, y in zip(a, b)])
-    norm_a = sum([x ** 2 for x in a]) ** 0.5
-    norm_b = sum([x ** 2 for x in b]) ** 0.5
-    return dot_product / (norm_a * norm_b)
+def ask(question, answer, context):
+    #retrieved_knowledge = retrieve(question)
 
-def retrieve(dataset, query, top_n=3, similarity_function=cosine_similarity, model='hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'):
-    query_embedding = ollama.embed(model=model, input=query)['embeddings'][0]
-    similarities = []
-    for chunk, embedding in dataset:
-        similarity = similarity_function(query_embedding, embedding)
-        similarities.append((chunk, similarity))
-    similarities.sort(key=lambda x: x[1], reverse=True)
-    return similarities[:top_n]
+    #titles = []
+    keys = FILE_DATA.keys()
+    threads = []
+    for s in context:
+        if s in keys:
+            threads.append(FILE_DATA[s])
+    #for s in retrieved_knowledge:
+    #    if s[0] not in titles:
+    #        threads.append(FILE_DATA[s[0]])
+    #        titles.append(s[0])
 
-def ask(dataset, input_query, model='hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF'):
-    retrieved_knowledge = retrieve(dataset, input_query)
-    newline = ord('\n')
+    newline = '\n'
 
-    instruction_prompt = f'''You are a helpful chatbot.
-    Use only the following pieces of context to answer the question. Don't make up any new information:
-    {str(newline).join([f' - {chunk}' for chunk, similarity in retrieved_knowledge])}
+    prompt = f'''Answer only with yes or no.
+    Use only the following discussion as context to answer the question. Don't make up any new information:
+    {newline.join(threads)}
     '''
 
-    stream = ollama.chat(
-        model=model,
-        messages=[
-            {'role': 'system', 'content': instruction_prompt},
-            {'role': 'user', 'content': input_query},
-        ],
-        stream=True,
-    )
+    question = 'Is answer "'+ answer + '" correct answer for question "' + question + '" based on the context from the discussions'
 
-    return stream
+    answer = ask_model(prompt, question)
+    return answer
