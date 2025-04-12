@@ -1,4 +1,5 @@
 import ollama
+import json
 
 EMBEDDING_MODEL = 'hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'
 LANGUAGE_MODEL = 'hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF'
@@ -23,3 +24,12 @@ def ask_model(prompt, question, model=LANGUAGE_MODEL):
     )
 
     return stream
+
+def read_gemini_json(filename):
+    with open(filename, encoding="utf8") as f:
+        d = json.load(f)
+        return d
+    
+def write_json_file(data, filename):
+    with open(filename, 'w') as f:
+        json.dump(data, f)

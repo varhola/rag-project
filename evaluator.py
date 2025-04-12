@@ -2,8 +2,9 @@ import csv
 import random
 
 from retrieval import retrieve
-from model import ask
+from model import ask, give_answer
 from dataset import FILE_DATA
+from helpers import read_gemini_json, write_json_file
 
 def read_answers(filename):
     res = []
@@ -37,12 +38,58 @@ def combined_evaluation(questions, rounds=5):
             total_count += 1
         print(str(correct_count) + "/" + str(total_count))
 
+def gemini_comparison(filename):
+    gemini_results = read_gemini_json(filename)
+    # With our retriever
+    model_result = []
+    for result in gemini_results:
+        similar = retrieve(result["question"])
+        context = []
+        for s in similar:
+            if s[0] not in context:
+                context.append(s[0])
+        generated_result = give_answer(result["question"], context)
+        res = ""
+        for r in generated_result:
+            res += r['message']['content']
+        result["model_answer"] = res
+        model_result.append(result)
+    write_json_file(model_result, "model_results.json")
+
+    # With correct contexts
+    control_result = []
+    for result in gemini_results:
+        context = []
+        if context != "N/A":
+            context = result["expected_evidence"].split("<and>")
+        generated_result = give_answer(result["question"], context)
+        res = ""
+        for r in generated_result:
+            res += r['message']['content']
+        result["model_answer"] = res
+        control_result.append(result)
+    write_json_file(model_result, "control_results.json")
+
+    # With random contexts
+    keys = list(FILE_DATA)
+    control_result = []
+    for result in gemini_results:
+        context = context = keys[random.randint(0,len(FILE_DATA) - 1)]
+        generated_result = give_answer(result["question"], context)
+        res = ""
+        for r in generated_result:
+            res += r['message']['content']
+        result["model_answer"] = res
+        control_result.append(result)
+    write_json_file(model_result, "random_results.json")
+
 def debug_retrieval(questions):
+    print("Testing retrieval:")
     correct_count = 0
+    enought_count = 0
     total_count = 0
     for question in questions:
         similar = retrieve(question[0])
-        print(question[0])
         discussions = []
         for s in similar:
             discussions.append(s[0])
@@ -52,22 +99,21 @@ def debug_retrieval(questions):
                 if topic not in discussions:
                     has_match = False
             if has_match:
-                correct_count += 1
+                enought_count += 1
+
+            for topic in discussions:
+                if topic in question[2].split("<and>") or has_match:
+                    correct_count += 1
+                    break
+
             total_count += 1
 
-        #if question[2] != "N/A":
-        #    has_match = True
-        #    for topic in discussions:
-        #        if topic in question[2].split("<and>") and not has_match:
-        #            correct_count += 1
-        #            has_match = True
-        #    total_count += 1
+    print(" Giving a correct context: " + str(correct_count) + "/" + str(total_count))
+    print(" Giving all the necassary context: " + str(enought_count) + "/" + str(total_count))
+    print()
 
-        print(question[1])
-        print(str(correct_count) + "/" + str(total_count))
-        print()
-
-def debug_questions(questions, rounds=10):
+def debug_questions(questions, rounds=0):
+    print("Testing chatbot:")
     same = []
     for i in range(rounds):
         print("Round " + str(i))
@@ -89,7 +135,7 @@ def debug_questions(questions, rounds=10):
                     total += 1
                     break
             index += 1
-        print(str(count) + "/" + str(total))
+        print(" Correct answers when using correct contexts: " + str(count) + "/" + str(total))
         same = incorrect_indexes
         # Incorrect contexts
         keys = list(FILE_DATA)
@@ -106,5 +152,4 @@ def debug_questions(questions, rounds=10):
                     total += 1
                     break
             index += 1
-        print(str(count) + "/" + str(total))
-    print(same)
+        print(" Correct answers with incorrect contexts: " + str(count) + "/" + str(total))
