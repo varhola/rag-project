@@ -2,7 +2,8 @@ import ollama
 import json
 
 EMBEDDING_MODEL = 'hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'
-LANGUAGE_MODEL = 'hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF'
+# LANGUAGE_MODEL = 'hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF'
+LANGUAGE_MODEL = 'hf.co/bartowski/SmolLM2-135M-Instruct-GGUF'
 
 def data_to_vec(data, model=EMBEDDING_MODEL):
     return ollama.embed(model=model, input=data)['embeddings'][0]  
