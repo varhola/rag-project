@@ -54,7 +54,7 @@ def gemini_comparison(filename):
             res += r['message']['content']
         result["model_answer"] = res
         model_result.append(result)
-    write_json_file(model_result, "model_results.json")
+    write_json_file(model_result, "model_results_smol.json")
 
     # With correct contexts
     control_result = []
@@ -68,7 +68,11 @@ def gemini_comparison(filename):
             res += r['message']['content']
         result["model_answer"] = res
         control_result.append(result)
-    write_json_file(model_result, "control_results.json")
+        #print(result["question"])
+        #print(result["expected_answer"])
+        #print(res.encode('utf-8'))
+        #print()
+    write_json_file(model_result, "control_results_smol.json")
 
     # With random contexts
     keys = list(FILE_DATA)
@@ -81,7 +85,7 @@ def gemini_comparison(filename):
             res += r['message']['content']
         result["model_answer"] = res
         control_result.append(result)
-    write_json_file(model_result, "random_results.json")
+    write_json_file(model_result, "random_results_smol.json")
 
 def debug_retrieval(questions):
     print("Testing retrieval:")

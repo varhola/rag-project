@@ -1,0 +1,19 @@
+Retrieval:
+
+Does it leave some of the correct labels unmatched (will have enought context for answer)
+
+That we get all necessary ones with five most similar ones: 434/572
+That we get all necessary ones with three most similar ones: 398/572
+
+Model with Yes/No answers:
+
+Model is asked if "A is the answer to question B based on context C and D". 
+
+260/572
+44/572
+
+Combined model:
+
+    Correct answers
+        With larger model: 35/100
+        With smaller model: 19/100

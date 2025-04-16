@@ -1,0 +1,29 @@
+**Results**
+
+*Dataset description*
+The LiHua-World dataset is a year-long chat history from a synthetic user, annotated for QA tasks in Retrieval-Augmented Generation (RAG) settings. The Q&A subset includes single-hop, multi-hop, and summary-style questions, each with human-written answers and annotated supporting evidence.
+
+*Evaluations*
+First, Gemini 1.5 Flash was evaluated using the functions answer_ok and evidence_ok.
+With the condition of both being simultaneously true, only 19 answers passed the test.
+Upon manual evaluation, it was noted that the model often struggled to cite correct evidence, even when the answer was factually correct. Thus, a decision was made to filter using answer_ok only. This raised the number of answers considered "correct" to 45.
+Then the 55 remaining responses were reviewed manually.
+Out of 55, 33 were considered correct for various reasons:
+1. The rule-based function failed to give credit to the model, since it could not account for variability or creativity of responses. As was noted during the BLEU assignment of the course, there are many ways to formulate a factually correct response in natural language, and covering all the options using a rule-based system is a fundamentally limited approach.
+2. On rare occasions, the model gave an answer which, given the context, was sensible; however, the evaluation dataset required a different answer. Such cases of "sensible answers" were considered correct as well. 
+That made the total of 45 (approved only by answer_ok) + 33 (approved upon manual inspection) = 78 correct
+
+The responses of Gemini 1.5 Pro approved by the functions numbered 29.
+After manual inspection, 51 additional answers were considered correct, for the same reasons as for the "Flash" model.
+That made the total of 80 answers considered correct in total.
+
+*Summary*
+The models performed on a similar level with only a negligible difference of 2.
+The main challenge in evaluation was the strict requirement for evidence citation. Often, the model produced a factually accurate answer but accompanied it by a wrong timestamp. In cases like the garage sale example (below), the model cited 20260814_16:00 instead of the correct 15:00 message, despite the relevant information being paraphrased across both. The dataset contains more than 400 timestamps, and the model gets overwhelmed by the sheer amount of similar entries to be perfectly distinguished.
+
+*An example of incorrect evidence and a factually correct answer*
+
+"question": "What is the reason Thrall cannot participate in the garage sale?",
+    "expected_answer": "Thrall has a lot happening with the garden renovations",
+    "model_answer": "Answer: Thrall cannot participate in the garage sale because he is busy with the garden renovations. Evidence: 20260814_16:00.",
+    "expected_evidence": "20260814_15:00",
